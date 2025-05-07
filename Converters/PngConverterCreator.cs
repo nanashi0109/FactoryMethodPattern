@@ -2,7 +2,7 @@
 {
     public class PngConverterCreator : AConverterCreator
     {
-        public override AImageConverter CreateConverter()
+        public override AImageConverter Create()
         {
             return new PngConverter();
         }

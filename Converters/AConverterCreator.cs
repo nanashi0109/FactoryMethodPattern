@@ -2,6 +2,6 @@
 {
     public abstract class AConverterCreator
     {
-        public abstract AImageConverter CreateConverter();
+        public abstract AImageConverter Create();
     }
 }

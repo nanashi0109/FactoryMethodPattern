@@ -2,7 +2,7 @@
 {
     public class JpgConverterCreator : AConverterCreator
     {
-        public override AImageConverter CreateConverter()
+        public override AImageConverter Create()
         {
             return new JpgConverter();
         }
