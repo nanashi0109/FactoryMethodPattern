@@ -1,10 +1,12 @@
 ﻿using FactoryMethodPattern.Converters;
+using FactoryMethodPattern.Core;
 using System;
 
 namespace FactoryMethodPattern
 {
     public class App
     {
+
         private AConverterCreator _converterCreator;
 
         public App(AConverterCreator converterCreator) 
@@ -22,14 +24,14 @@ namespace FactoryMethodPattern
 
         private string GetUserTargetFile()
         {
-            Console.Write("Путь исходнога файла");
+            Console.Write(Constants.TARGET_FILE_PATH);
 
             return Console.ReadLine();
         }
 
         private string GetUserSourceFile()
         {
-            Console.Write("Путь целевого файла");
+            Console.Write(Constants.SOURCE_FILE_PATH);
 
             return Console.ReadLine();
         }
