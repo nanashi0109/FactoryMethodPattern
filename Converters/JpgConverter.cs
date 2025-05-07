@@ -1,4 +1,6 @@
-﻿using System.IO;
+﻿using FactoryMethodPattern.Core;
+using System;
+using System.IO;
 
 namespace FactoryMethodPattern.Converters
 {
@@ -9,10 +11,9 @@ namespace FactoryMethodPattern.Converters
             FileInfo file = new FileInfo(source);
 
             if (file.Exists)
-            {
-                file.CopyTo(target);
-                Path.ChangeExtension(target, ".png");
-            }
+                file.CopyTo(Path.ChangeExtension(target, ".png"));
+            else
+                Console.WriteLine(Constants.FILE_NOT_EXISTS);
         }
     }
 }

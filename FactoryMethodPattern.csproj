@@ -43,11 +43,20 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Program.cs" />
+    <Compile Include="Converters\AConverterCreator.cs" />
+    <Compile Include="Converters\AImageConverter.cs" />
+    <Compile Include="Converters\JpgConverter.cs" />
+    <Compile Include="Converters\JpgConverterCreator.cs" />
+    <Compile Include="Converters\PngConverter.cs" />
+    <Compile Include="Converters\PngConverterCreator.cs" />
+    <Compile Include="Core\App.cs" />
+    <Compile Include="Core\Constants.cs" />
+    <Compile Include="Core\Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

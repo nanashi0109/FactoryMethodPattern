@@ -6,7 +6,6 @@ namespace FactoryMethodPattern
 {
     public class App
     {
-
         private AConverterCreator _converterCreator;
 
         public App(AConverterCreator converterCreator) 
@@ -20,6 +19,8 @@ namespace FactoryMethodPattern
             AImageConverter converter = _converterCreator.Create();
 
             converter.Convert(sourceFile, targetFile);
+
+            Console.WriteLine(Constants.SUCCESS_CONVERTING);
         }
 
         private string GetUserTargetFile()

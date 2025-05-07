@@ -7,5 +7,8 @@
 
         public const string TARGET_FORMAT = "Целевой формат: ";
 
+        public const string SUCCESS_CONVERTING = "Конвертация выполнена";
+
+        public const string FILE_NOT_EXISTS = "Файла не существует";
     }
 }
