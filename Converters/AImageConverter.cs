@@ -1,5 +1,4 @@
-﻿
-namespace FactoryMethodPattern.Converters
+﻿namespace FactoryMethodPattern.Converters
 {
     public abstract class AImageConverter
     {
